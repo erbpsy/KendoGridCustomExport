@@ -14,7 +14,7 @@
         }];
         if (exportAll) {
             var dataDource = grid.getKendoGrid();
-            var trs = $("#gridResultTransaction").find('tr');
+            var trs = $("#grid").find('tr');
             for (var i = 0; i < trs.length; i++) {
                 if ($(trs[i]).find(":checkbox").is(":checked")) {
                     var dataItem = dataDource.dataItem(trs[i]);
